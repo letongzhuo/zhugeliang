@@ -1,0 +1,67 @@
+
+<!doctype htm1>
+<html>
+<head>
+<meta charset="utf-8">
+<title>智谋三国：诸葛亮的智慧之旅</title>
+<link rel="stylesheet" type="text/css" href="css/flie-two.css">
+<script type="text/javascript"src="javascript/index.js"></script>
+</head>
+<body>
+	<div class="container">	
+			<nav>
+				<ul id="menu">
+				  <li><a href="index.html">首页</a></li>
+				  <li><a href="../课设/政治建设_盛/index.html">了解更多</a></li>
+				</ul>
+				<i  id="toggle"><img src="img/nav.png" alt=""/></i>
+			  </nav>
+			  <div id="slide">
+				<div class="item" id="one" style="background-image: url(img/官吏建设.jpg)">
+				  <div class="content">
+					<div class="name">官吏建设</div>
+					<div class="des">
+						<p>
+							故考黜之政，务知人之所苦。其苦有五。或有小吏因公为私，乘权作奸，左手执戈，右手治生，内侵于官，外采于民，此所苦一也；或有过重罚轻，法令不均，无罪被辜，以致灭身，或有重罪得宽，扶强抑弱，加以严刑，枉责其情，此所苦二也；或有纵罪恶之吏，害告诉之人，断绝语辞，蔽藏其情，掠劫亡命，其枉不常，此所苦三也；或有长吏数易守宰，兼佐为政，阿私所亲，枉克所恨，逼切为行，偏颇不承法制，更因赋敛，傍课采利，送故待新，夤缘征发，诈伪储备，以成家产，此所苦四也；或有县官慕功，赏罚之际，利人之事，买卖之费，多所裁量，专其价数，民失其职，此所苦五也。凡此五事，民之五害，有如此者，不可不黜，无此五者，不可不迁。 </p>
+						</p>
+					</div>
+				  </div>
+				</div>
+				<div class="item" id="two" style="background-image: url(img/法律建设.jpg)">
+				  <div class="content">
+					<div class="name">法律建设</div>
+					<div class="des">
+						<p>
+							赏罚不曲，则人死服。路有饥人，厩有肥马，可谓亡人而自存，薄人而自厚。故人君先募而后赏，先令而后诛，则人亲附，畏而爱之，不令而行。赏罚不正，则忠臣死于非罪，而邪臣起于非功。赏赐不避怨雠，则齐桓得管仲之力；诛罚不避亲戚，则周公有杀弟之名。书云：“无偏无党，王道荡荡；无党无偏，王道平平。”  </p>
+							<p>
+					</div>
+				  </div>
+				</div>
+				<div class="item" id="three" style="background-image: url(img/民族建设.jpg)">
+					<div class="content">
+					  <div class="name">民族建设</div>
+					  <div class="des">
+						  <p>
+							故九州之地，魏有其七，我无其一，由僻陋而启雄图，出封疆以延大敌；财用足而不曰浚我以生，干戈动而不曰残人以逞。其厎定南方也，不以力制，而取其心服；震叠诸夏也，不敢角其胜负，而止候其存亡；法加于人也，虽死徙而无怨；德及于人也，虽奕叶而见思。此之谓精义入神，自诚而明者矣。若其人存，其政举，则四海可平，五服可倾。  </p>
+			 <p>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+			  <div class="buttons">
+				<button id="next"><i class="fa-solid fa-angle-right"><img src="img/播放.png" alt="" width="50px" height="50px"></i></button>
+			  </div>
+	</div>
+	  <script>
+		  const menu = document.querySelector("#menu");
+		  const toggle = document.getElementById("toggle");
+		  toggle.onclick = function () {
+			menu.classList.toggle("active");
+		  };
+		  document.getElementById("next").onclick = function () {
+  let lists = document.querySelectorAll(".item");
+  document.getElementById("slide").appendChild(lists[0]);
+};
+		</script>
+</body>
+</htm1>

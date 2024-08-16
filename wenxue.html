@@ -1,0 +1,66 @@
+<!doctype htm1>
+<html>
+<head>
+<meta charset="utf-8">
+<title>智谋三国：诸葛亮的智慧之旅</title>
+<link rel="stylesheet" type="text/css" href="css/flie-two.css">
+<script type="text/javascript"src="javascript/index.js"></script>
+</head>
+<body>
+	<div class="container">	
+			<nav>
+				<ul id="menu">
+				  <li><a href="index.html">首页</a></li>
+				  <li><a href="../课设/wenxue/index.html">了解更多</a></li>
+				</ul>
+				<i  id="toggle"><img src="img/nav.png" alt=""/></i>
+			  </nav>
+			  <div id="slide">
+				<div class="item" id="one" style="background-image: url(img/知人性.jpg)">
+				  <div class="content">
+					<div class="name">知人性</div>
+					<div class="des">
+						<p>
+						夫知人之性，莫难察焉。美恶既殊，情貌不一，有温良而为诈者，有外恭而内欺者，有外勇而内怯者，有尽力而不忠者。然知人之道有七焉：一曰，间之以是非而观其志；二曰，穷之以辞辩而观其变；三曰，咨之以计谋而观其识；四曰，告之以祸难而观其勇；五曰，醉之以酒而观其性；六曰，临之以利而观其廉；七曰，期之以事而观其信。 </p>
+					</p>
+					</div>
+				  </div>
+				</div>
+				<div class="item" id="two" style="background-image: url(img/喜怒.jpg)">
+				  <div class="content">
+					<div class="name">喜怒</div>
+					<div class="des">
+						<p>
+						  行其私而废其功，将不可发私怒，而兴战必用众心，苟合以私忿而合战，则用众必败。怒不可以复悦，喜不可以复怒，故以文为先，以武为后，先胜则必后负，先怒则必后悔，一朝之忿，而亡其身。故君子威而不猛，忿而不怒，忧而不惧，悦而不喜。可忿之事，然后加之威武，威武加则刑罚施，刑罚施则众奸塞。	  </p>
+						<p>
+					</div>
+				  </div>
+				</div>
+				<div class="item" id="three" style="background-image: url(img/思虑.jpg)">
+					<div class="content">
+					  <div class="name">思虑</div>
+					  <div class="des">
+						  <p>
+							思虑之政，谓思近虑远也。夫人无远虑，必有近忧，故君子思不出其位。思者，正谋也，虑者，思事之计也。非其位不谋其政，非其事不虑其计。大事起于难，小事起于易。故欲思其利，必虑其害，欲思其成，必虑其败。是以九重之台，虽高必坏。故仰高者不可忽其下，瞻前者不可忽其后。  </p>
+							<p>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+			  <div class="buttons">
+				<button id="next"><i class="fa-solid fa-angle-right"><img src="img/播放.png" alt="" width="50px" height="50px"></i></button>
+			  </div>
+	</div>
+	  <script>
+		  const menu = document.querySelector("#menu");
+		  const toggle = document.getElementById("toggle");
+		  toggle.onclick = function () {
+			menu.classList.toggle("active");
+		  };
+		  document.getElementById("next").onclick = function () {
+  let lists = document.querySelectorAll(".item");
+  document.getElementById("slide").appendChild(lists[0]);
+};
+		</script>
+</body>
+</htm1>

@@ -1,0 +1,66 @@
+
+<!doctype htm1>
+<html>
+<head>
+<meta charset="utf-8">
+<title>智谋三国：诸葛亮的智慧之旅</title>
+<link rel="stylesheet" type="text/css" href="css/flie-two.css">
+</head>
+<body>
+	<div class="container">	
+			<nav>
+				<ul id="menu">
+				  <li><a href="index.html">首页</a></li>
+				  <li><a href="../课设/军事/军事/ccsy.html">了解更多</a></li>
+				</ul>
+				<i  id="toggle"><img src="img/nav.png" alt=""/></i>
+			  </nav>
+			  <div id="slide">
+				<div class="item" style="background-image: url(img/草船借箭.jpg)">
+				  <div class="content">
+					<div class="name">草船借箭</div>
+					<div class="des">
+						<p>
+							高明之统帅，不仅要知己知彼，善用兵将，还要观天时，明地利，懂人生；料事如神，熟读兵法，统帅万军，游戏自如。此等大将如古之孙、吴、管乐，今之曹孟德、周公瑾也。兵者，有可见之兵，有不可见之兵。可见之兵者，荷戟执戈，肉身之士。不可见之兵，日月星辰，风云水火，山川之灵气，如此万物万象均可为兵。《七十二候图》成图于周公，将节气周天三百六十日，分类别之。五日为候，三候为气，六气成时，四时成岁。将一年之中的节气更替，万物衰荣一一道明，何时虹藏不见，何时雷始收声，何时土润溽署，何时雾霾蒸腾。如此，只需暗熟于胸，融汇于心，运用得当，便可胜于百万雄兵。
+						</p>
+					</div>
+				  </div>
+				</div>
+				<div class="item" style="background-image: url(img/华容释曹.jpg)">
+				  <div class="content">
+					<div class="name">华容释曹</div>
+					<div class="des">
+						<p>
+							三分天下尚未形成，我方势力不及曹操与孙权，曹操必败，但不可灭，曹操若死，北方必乱，孙权便有机可乘，这对于主公统一天下极为不利。火烧赤壁后，曹操必率残部逃向华容道，遇见关将军，定会苦苦相求，哭拜于地，而关将军定然百感交集。最后曹操必在关将军刀下讨得一条生路。既如此，不如将这份人情留于云长做了。
+						<p>
+					</div>
+				  </div>
+				</div>
+				<div class="item" style="background-image: url(img/安居平五路.jpg)">
+					<div class="content">
+					  <div class="name">安居平五路</div>
+					  <div class="des">
+						<p>
+							诸葛丞相熟知军情，运筹帷幄，故能御敌于千里之外。羌兵素来视马超为神威将军，丞相用他去挡羌兵，羌兵自然不战而退。南王孟获多疑心，丞相派魏延用疑兵左右周旋，南兵自然不敢冒进。孟达是李严挚友，丞相用李严书信劝之，孟达岂能进兵？曹真一路，赵云已把住各处险道，正所谓一将守关，万夫莫开，曹真只能不战而回。五路兵马，只剩下东吴一路，用一舌辩之士，径往东吴，以利害说之，阻孙权进兵。
+						<p>
+					  </div>
+					</div>
+				  </div>
+			  </div>
+			  <div class="buttons">
+				<button id="next"><i class="fa-solid fa-angle-right"><img src="img/播放.png" alt="" width="50px" height="50px"></i></button>
+			  </div>
+	</div>
+	<script>
+		const menu = document.querySelector("#menu");
+		const toggle = document.getElementById("toggle");
+		toggle.onclick = function () {
+		menu.classList.toggle("active");
+		};
+		document.getElementById("next").onclick = function () {
+		let lists = document.querySelectorAll(".item");
+ 		document.getElementById("slide").appendChild(lists[0]);
+		};
+	</script>
+</body>
+</htm1>
