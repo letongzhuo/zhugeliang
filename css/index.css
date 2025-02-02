@@ -1,26 +1,24 @@
-/*重置浏览器的默认样式*/  
+/*重置浏览器的默认样式*/
 * {
-  margin: 0;  
-  padding: 0;  
-  border: 0;  
-  list-style: none;  
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
   cursor: url(../img/my.cur), url(../img/my.png), auto;
-
-
-} /*全局控制*/  
-body {  
-  position: relative;  
-  width: 100%;  
-  background-size: 100% auto;  
-  background-repeat: no-repeat;  
-} /*未点击和点击后的样式*/  
-a:link,  
-a:visited {  
-  color: #222;  
-  text-decoration: none;  
-} /*鼠标移上时的样式*/  
-a:hover {  
-  color: #2fafbc; 
+} /*全局控制*/
+body {
+  position: relative;
+  width: 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+} /*未点击和点击后的样式*/
+a:link,
+a:visited {
+  color: #222;
+  text-decoration: none;
+} /*鼠标移上时的样式*/
+a:hover {
+  color: #2fafbc;
 }
 .container {
   width: 100%;
