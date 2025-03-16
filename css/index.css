@@ -1,0 +1,280 @@
+/*重置浏览器的默认样式*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  cursor: url(../img/my.cur), url(../img/my.png), auto;
+} /*全局控制*/
+body {
+  position: relative;
+  width: 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+} /*未点击和点击后的样式*/
+a:link,
+a:visited {
+  color: #222;
+  text-decoration: none;
+} /*鼠标移上时的样式*/
+a:hover {
+  color: #2fafbc;
+}
+.container {
+  width: 100%;
+  height: auto;
+}
+
+section,
+#footer {
+  height: 100vh;
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 10vh;
+  font-family: "modern_no._20regular", serif;
+  text-shadow: 4px 4px rgb(46, 43, 43);
+  display: flex;
+  justify-content: center;
+  /* 垂直居中 */
+  align-items: center;
+}
+
+#footer {
+  background-color: #c0b5aa;
+  height: 50vh;
+  color: #fff;
+  font-size: 20vh;
+}
+
+.img {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* 禁止用户误选中 */
+  user-select: none;
+}
+
+#img-one {
+  background-image: url(../img/index-bg.jpg); /*首页背景*/
+  background-size: cover;
+}
+#img-two {
+  background-image: url(../img/img5.jpg);
+  background-size: cover;
+}
+#img-three {
+  background-image: url(../img/img4.jpg);
+  background-size: cover;
+}
+
+.content-one {
+  background: url(../img/img1.jpg) no-repeat fixed center;
+  background-size: cover;
+}
+
+.content-two {
+  background: url(../img/img2.jpg) no-repeat fixed center;
+  background-size: cover;
+}
+
+.content-three {
+  background: url(../img/img3.jpg) no-repeat fixed center;
+  background-size: cover;
+}
+
+.text-box {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 25%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* 旋转中心 */
+  transform-origin: center bottom;
+  /* 扭曲斜切 */
+  transform: skew(0, -8deg);
+}
+
+.text-box .cnt {
+  display: inline-block;
+  text-align: right;
+  margin: 40px 0 10px;
+  width: 90%;
+  max-width: 80%;
+  transform-origin: right bottom;
+  transform: skew(0, 8deg);
+}
+
+.cnt h2 {
+  margin-top: 100px;
+  font-size: 0.5em;
+  font-family: "modern_no._20regular", serif;
+  text-shadow: 1px 0px 0px #323232;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.cnt p {
+  font-size: 0.3em;
+  line-height: 1.7; /*设置数字，此数字会与当前的字体尺寸相乘来设置行间距。*/
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.cnt a.btn {
+  font-size: 90%;
+  font-family: "modern_no._20regular", serif;
+  text-shadow: 1px 0px 0px black;
+  line-height: 2.8;
+  display: inline-block;
+  background-color: #eaeaea;
+  color: #000;
+  border: 3px solid #000;
+  white-space: nowrap; /*文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。*/
+  text-decoration: none;
+  padding: 0 20px;
+}
+.img a {
+  color: rgb(255, 255, 255);
+}
+#toggle img {
+  width: 50px;
+  height: auto;
+  position: fixed;
+  top: 0px;
+  right: 80px;
+  z-index: 10;
+}
+#menu {
+  flex-direction: column;
+  row-gap: 1.5rem;
+  position: fixed;
+  left: -100%;
+  top: 0px;
+  width: 20%;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: calc(100vh - 130px);
+  z-index: 10;
+  transition: left 0.5s ease;
+}
+#menu.active {
+  left: 0;
+}
+#menu li a {
+  margin-left: unset;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(26, 144, 171);
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  transition: 0.25s ease;
+}
+#menu li a:hover {
+  background-color: rgb(26, 144, 171);
+  color: bisque;
+}
+
+@media screen and (max-width: 768px) {
+  section, #footer {
+    font-size: 6vh;  /* 减小基础字体大小 */
+    text-shadow: 2px 2px rgb(46, 43, 43);  /* 减小文字阴影 */
+  }
+
+  #footer {
+    height: 30vh;
+    font-size: 12vh;
+  }
+
+  .text-box {
+    bottom: 15%;  /* 调整文本框位置 */
+    transform: skew(0, -5deg);  /* 减小倾斜角度 */
+  }
+
+  .cnt h2 {
+    margin-top: 40px;  /* 减少顶部间距 */
+    font-size: 0.6em;
+  }
+
+  .cnt p {
+    font-size: 0.4em;
+    line-height: 1.5;
+  }
+
+  .cnt a.btn {
+    padding: 0 15px;  /* 减小按钮内边距 */
+    line-height: 2.2;
+    border-width: 2px;
+  }
+
+  /* 调整导航菜单 */
+  #menu {
+    width: 70%;  /* 加宽侧边菜单 */
+    padding-top: 80px;
+  }
+  
+  #menu li a {
+    font-size: 1.5rem;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  #toggle img {
+    right: 20px;  /* 调整菜单按钮位置 */
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section, #footer {
+    font-size: 4vh;
+  }
+
+  .cnt p {
+    font-size: 0.35em;  /* 进一步减小文字大小 */
+  }
+
+  .cnt a.btn {
+    font-size: 80%;
+    padding: 0 10px;
+  }
+}
+/* 在原有样式基础上添加移动端适配 */
+
+@media screen and (max-width: 768px) {
+  /* ... 其他移动端样式保持不变 ... */
+  
+  /* 调整所有背景图的显示位置 */
+  .img,
+  .content-one{
+    background-position: 20% center;  /* 改为显示图片中心区域 */
+  }
+  .content-two{
+    background-position: 30% center;  /* 改为显示图片中心区域 */
+  }
+  .content-three {
+    background-position: top center;  /* 改为显示图片顶部区域 */
+  }
+
+  /* 首页背景特殊调整 */
+  #img-one {
+    background-position: 60% center;  /* 显示图片右侧60%位置 */
+  }
+
+  /* 其他章节背景微调 */
+  #img-two {
+    background-position: bottom center;
+  }
+  
+  #img-three {
+    background-position: 25% center;
+  }
+}

@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>智谋三国：诸葛亮的智慧之旅</title>
 <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
@@ -13,13 +14,10 @@
 				  <li><a href="#one">军事智慧</a></li>
 				  <li><a href="#two">政治智慧</a></li>
 				  <li><a href="#three">文学智慧</a></li>
-				  <li><a href="#img-three">想法留言板</a></li>
 				</ul>
 				<i  id="toggle"><img src="img/nav.png" alt=""/></i>
 			  </nav>
 			<h1>诸葛亮的智慧之旅</h1>
-			<p>&nbsp;</p>
-			<a href="login.html">登录|注册</a>
 		</section>
 		<section class="content-one" id="one">
 		  <div class="text-box">
@@ -61,13 +59,7 @@
 			</div>
 		  </div>
 		</section>
-		<section id="img-three" class="img">
-		  <h1>想法</h1>
-		  <p>
-			<a href="liuyanban.html" class="btn">留<strong>言</strong><em>板</em></a>
-		  </p>
-		</section>
-		<section id="footer">皮匠制作</section>
+		<section id="footer">同桌制作</section>
 	  </div>
 	  <script>
 		  const menu = document.querySelector("#menu");
@@ -75,6 +67,11 @@
 		  toggle.onclick = function () {
 			menu.classList.toggle("active");
 		  };
+		  document.querySelectorAll('#menu li a').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+    });
 		</script>
 </body>
 </htm1>
